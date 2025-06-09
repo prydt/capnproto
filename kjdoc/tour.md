@@ -364,7 +364,7 @@ Let's face it: "printf() debugging" is easy and effective. KJ embraces this with
 KJ_DBG("hi", foo, bar, baz.qux)
 ```
 
-`KJ_DBG(...)` is equivalent to `KJ_LOG(DEBUG, ...)` -- logging at the `DEBUG` level, which is always enabled. The dedicated macro exists for brevity when debugging. `KJ_DBG` is intended to be used strictly for temporary debugging code that should never be committed. We recommend setting up commit hooks to reject code that contains invocations of `KJ_DBG`.
+`KJ_DBG(...)` is equivalent to `KJ_LOG(DBG, ...)` -- logging at the `DBG` level, which is always enabled. The dedicated macro exists for brevity when debugging. `KJ_DBG` is intended to be used strictly for temporary debugging code that should never be committed. We recommend setting up commit hooks to reject code that contains invocations of `KJ_DBG`.
 
 ### System call error checking
 
